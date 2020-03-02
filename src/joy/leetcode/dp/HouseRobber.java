@@ -3,6 +3,8 @@ package joy.leetcode.dp;
 
 // 所有DP问题的解法的通用进化路径：https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.
 public class HouseRobber {
+    // 一个错误的观念是，把所有奇数位置上的数和 所有偶数位置上的数和，取最大的。
+    // 例：[2, 1, 1, 6], 按照上面的算法，最大的值为7=1+6，但实际是2 + 8
 
     public int rob1(int[] nums) {
         // dp: top to down, 有很多重复计算。时间复杂度：O(2**n)

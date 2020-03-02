@@ -3,7 +3,6 @@ package joy.leetcode.dp;
 public class BestTimeToBuyAndSellStock {
     public static int maxProfit(int[] prices) {
         int maxCur = 0, maxSoFar = 0;
-        int buyDayIndex = -1, sellDayIndex = -1;
         for (int i = 1; i < prices.length; i++) {
             maxCur += prices[i] - prices[i - 1];
             maxCur = Math.max(0, maxCur);
